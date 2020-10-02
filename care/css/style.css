@@ -2826,6 +2826,13 @@ ul.inbox-pagination li {
     color: #fff;
 }
 
+.chat-room-head2 {
+    background:#4ECDC4;
+    color: #FFFFFF;
+    min-height: 10px;
+    padding: 15px;
+}
+
 ul.chat-list li a {
     color: #6a6a6a;
     display: block;
