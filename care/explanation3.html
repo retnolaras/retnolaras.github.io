@@ -20,13 +20,13 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
+  
 
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
+
+<!-- WIZARD -->
+<link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="css/bd-wizard.css" rel="stylesheet" >
+
 </head>
 
 <body>
@@ -88,8 +88,8 @@
     <!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
-    <!-- /MAIN CONTENT -->
-        <section id="main-content">
+    <!--main content start-->
+    <section id="main-content">
       <section class="wrapper site-min-height">
         <div class="row mt">
           <div class="col-lg-12">
@@ -115,7 +115,7 @@
                 <div class="profile-pic">
                   <p><img src="img/ui-divya.jpg" class="img-circle"></p>
                   <p>
-                    <button class="btn btn-theme"><i class="fa fa-check"></i> Edit Profile</button>
+                    <button class="btn btn-theme"> Edit Data</button>
     
                   </p>
                 </div>
@@ -124,126 +124,201 @@
             </div>
             <!-- /row -->
           </div>
-          
-          
-          
           <!-- /col-lg-12 -->
-          <div class="col-lg-12 mt">
-            <div class="row content-panel">
-              <div class="panel-heading">
-                <ul class="nav nav-tabs nav-justified">
-                  <li class="active">
-                    <a data-toggle="tab" href="#choose">Result Information</a>
-                  </li>
-                  <!--<li>
-                    <a data-toggle="tab" href="#result" class="contact-map">Analysis Information</a>
-                  </li>-->
-                  <li>
-                    <a data-toggle="tab" href="#additional">Additional Information</a>
-                  </li>
-                  <li>
-                    <a data-toggle="tab" href="#chat">Question</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /panel-heading -->
-              <div class="panel-body">
-                <div class="tab-content">
-                  <!-- tab1 -->
-                  <div id="choose" class="tab-pane active">
-                    <div class="row mt">
-          <div class="col-md-12">
-            <div class="white-panel pn">
-              <div class="panel-heading">
-                <div class="pull-left">
-                  <h4>What information you would like to see from the analysis result</h4>
-                </div>
-                <br>
-              </div>
-              <div class="custom-check goleft mt">
-                <table id="todo" class="table table-hover custom-check">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span class="check"><input type="checkbox" class="checked"></span>
-                        <a href="">Disease Name</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="check"><input type="checkbox" class="checked"></span>
-                        <a href="">Disease information</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="check"><input type="checkbox" class="checked"></span>
-                        <a href="">Possible Treatment to choose</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="check"><input type="checkbox" class="checked"></span>
-                        <a href="">Next step to take</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /table-responsive -->
-            </div>
-            <!--/ White-panel -->
-            <br>
-           <a data-toggle="tab" href="#result"><button class="btn btn-theme"><i class="fa fa-check"></i>See Result Analysis</button></a>
+            
           </div>
-          
-          <!-- /col-md-12 -->
-        </div>
-        <!--  row -->
-                    <!-- /OVERVIEW -->
-                  </div>
-                  <!-- /tab-pane -->
-                  <div id="result" class="tab-pane">
-                    <div class="col-md-10 col-md-offset-1 mt mb">
-                  <img class="" src="img/thermoleft2.jpeg" width="200" alt="">
-                <h4>Based on the data and the image, our system detect abnormality. It is highly likely that you have <strong>Ductal Carcinoma InSitu (DCIS).</strong> <br><br>CARE provides analysis from your image screening. However, our system is only 98% accurate. Therefore, there is a 2% chance that our assessment is incorrect. </h4><hr>
-                <p>DCIS is an early form of breast cancer. DCIS means the cells that line the milk ducts of the breast have become cancer, but they have not spread into surrounding breast tissue.<br><br>
+          <!--  /col-lg-12 -->
+      
+        <!-- /row -->
+        <div id="wizard">
+          <h3>CHOOSE INFORMATION</h3>
+          <section>
+           <h3 class="bd-wizard-step-title" align="center">Choose the information you want to see</h3>
+         <h5 align="center">We are going to show you the analysis result. Choose the information from the assessment that you want to see.</h5>
+         <div class="purpose-radios-wrapper">
+ <div class="purpose-radio" align="center">
+                  <input type="radio" name="cars" id="branding" class="purpose-radio-input" value="2" checked>
+                 <label for="branding" class="purpose-radio-label">
+                   <span class="label-icon">
+                     <img src="img/wizard/icon_branding.svg" alt="branding" class="label-icon-default">
+                     <img src="img/wizard/icon_branding_green.svg" alt="branding" class="label-icon-active">
+                   </span>
+                   <span class="label-text">Result Only</span>
+                 </label>
+                </div>
+                <div class="purpose-radio">
+                   <input type="radio" name="cars" id="mobile-design" class="purpose-radio-input" value="3">
+                  <label for="mobile-design" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <img src="img/wizard/icon_mobile_design.svg" alt="branding" class="label-icon-default">
+                      <img src="img/wizard/icon_mobile_design_green.svg" alt="branding" class="label-icon-active">
+                    </span>
+                    <span class="label-text">Result with Explanation</span>
+                  </label>
+                 </div>
+          </section>
+          <h3>ANALYSIS RESULT</h3>
+          <section>
+            <h3 class="bd-wizard-step-title" align="center">Analysis Result</h3>
+            
+<table>
+<tbody>
+<tr>
+<td> <img class="" src="img/thermoleft1.jpg" width="200" alt="" align="center"></td>
+<td>&nbsp;&nbsp;</td>
+<td style="width:800px;"><h4>Based on the data and the image, our system detect abnormality. It is highly likely that you have <strong>Ductal Carcinoma InSitu (DCIS).</strong> <br><br></h4></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+
+</tr>
+</tbody>
+</table>
+<p>DCIS is an early form of breast cancer. DCIS means the cells that line the milk ducts of the breast have become cancer, but they have not spread into surrounding breast tissue.<br><br></p>
+<div id="Cars3" class="desc" style="display: none;">
+<p>
 
 Please note, that DCIS is considered <b>non-invasive</b> or <b>pre-invasive</b> breast cancer. DCIS can’t spread outside the breast, but it still needs to be treated because it can sometimes go on to become invasive breast cancer (which can spread).<br><br>
+
+In some cases, DCIS will never develop further or grows so slowly that it would never cause harm during that person’s lifetime. Although the size and grade of the DCIS can help predict if it will become invasive, there is currently no way of knowing if this will happen. Please talk with your doctor to make sure of it. <br><br>
 
 If you want to read more about DCIS, here is the complete information from <a href="https://www.cancer.org/cancer/breast-cancer/treatment/treatment-of-breast-cancer-by-stage/treatment-of-ductal-carcinoma-in-situ-dcis.html">Cancer Society</a> and <a href="https://www.cancerresearchuk.org/about-cancer/breast-cancer/stages-types-grades/types/ductal-carcinoma-in-situ-dcis?_ga=2.246608704.595995288.1600752989-817105516.1599408092">Cancer Research UK</a>.
 
 </p>
 
-<h3>Treatment</h3>
-<p>Surgery is nearly always the first treatment for DCIS. This may be breast-conserving surgery or a mastectomy. Your surgeon might recommend that you have a particular surgery or they might give you a choice of operations. <br><br>
+<hr>
+<h3>How my image assessment compare to other case</h3>
+<p>You can see the comparison between your image assessment and other case: <br></p>
+<table>
+<tbody>
+<tr>
+<td align="center"><strong>NORMAL BREAST IMAGE</strong></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td align="center"><strong>YOUR IMAGE</strong></td>
+</tr>
+<tr>
+  <td>
+  </td>
+</tr>
+<tr>
+<td><img src="img/thermonormal.jpg " width="150"></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td><img src="img/thermoleft1.jpg" width="150"> </td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>In a Mammothermogram® each breast is graded individually using the internationally accepted and standardized TH (thermobiological) interpretation protocol. As you can see in the heat bar below, the hotter temperatures are the lighter colors to the right. 
+To see more cases and how it look like, you can check here: <a href="https://thermavue.co.uk/breast-case-studies/">More Cases</a>.<br>
+<img src="img/heat-bar.jpg" width=20%><br> <br>
+</p>
+
+
+
+<h4><mark>Please note: CARE is only 98% accurate. Therefore, there is a 2% chance that our assessment is incorrect. </mark></h4>
+
+<h4>Treatment</h4>
+<p>Because there’s no way of knowing when or if DCIS will become invasive, treatment is usually recommended. It is possible that this may lead to unnecessary or overtreatment for some people. <br><br>
+
+Surgery is nearly always the first treatment for DCIS. This may be breast-conserving surgery or a mastectomy. Your surgeon might recommend that you have a particular surgery or they might give you a choice of operations. <br><br>
 
 If you want to read more about the surgery, here is the complete information about <a href="https://www.cancer.org/cancer/breast-cancer/treatment/surgery-for-breast-cancer/breast-conserving-surgery-lumpectomy.html">breast-conserving surgery</a> and <a href="https://www.cancer.org/cancer/breast-cancer/treatment/surgery-for-breast-cancer/mastectomy.html">mastectomy</a>.
 
 </p>
+
+<h4>Further Support</h4>
+<p>Being told you have DCIS can be a difficult and worrying time. Everyone reacts differently to their diagnosis and have their own way of coping.
+
+Although DCIS is an early form of breast cancer with a very good prognosis, people understandably may feel very anxious and frightened by the diagnosis. People can often struggle to come to terms with being offered treatments such as a mastectomy, at the same time as being told their DCIS may never do them any harm.<br><br>
+
+If you want to talk, don’t be afraid to ask for help if you need it to people around you. You can also call our Helpline on <strong>0808 800 6000.</strong>
+</p><br>
+          </div>
 
 <h3>What Next</h3>
 <p>Based on your current result, it is highly suggested for you to contact your doctor for further assessment. This is because more tests are needed to assess and finalised the diagnosis.<br><br>
 
 <button class="btn btn-theme"><i class="fa fa-stethoscope"></i> Share this assesment result with your doctor</button>
 </p>
-            </div>
-                    <!-- /row -->
-                  </div>
-                  <!-- /tab-pane -->
-                  <div id="additional" class="tab-pane">
-                    <div class="col-md-10 col-md-offset-1 mt mb">
-            <div class="accordion" id="accordion2">
+
+            
+          </section>
+          <h3 align="center">MORE INFO</h3>
+          <section>
+          
+            
+          <div id="Cars2" class="desc">
+            <h3 class="bd-wizard-step-title">More Information</h3>
+              <p>DCIS is an early form of breast cancer. DCIS means the cells that line the milk ducts of the breast have become cancer, but they have not spread into surrounding breast tissue.<br><br>
+
+Please note, that DCIS is considered <b>non-invasive</b> or <b>pre-invasive</b> breast cancer. DCIS can’t spread outside the breast, but it still needs to be treated because it can sometimes go on to become invasive breast cancer (which can spread).<br><br>
+
+In some cases, DCIS will never develop further or grows so slowly that it would never cause harm during that person’s lifetime. Although the size and grade of the DCIS can help predict if it will become invasive, there is currently no way of knowing if this will happen. Please talk with your doctor to make sure of it. <br><br>
+
+If you want to read more about DCIS, here is the complete information from <a href="https://www.cancer.org/cancer/breast-cancer/treatment/treatment-of-breast-cancer-by-stage/treatment-of-ductal-carcinoma-in-situ-dcis.html">Cancer Society</a> and <a href="https://www.cancerresearchuk.org/about-cancer/breast-cancer/stages-types-grades/types/ductal-carcinoma-in-situ-dcis?_ga=2.246608704.595995288.1600752989-817105516.1599408092">Cancer Research UK</a>.
+
+</p>
+
+<h4>How my image assessment compare to other case</h4>
+<p>You can see the comparison between your image assessment and other case: <br></p>
+<table>
+<tbody>
+<tr>
+<td align="center"><strong>NORMAL BREAST IMAGE</strong></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td align="center"><strong>YOUR IMAGE</strong></td>
+</tr>
+<tr>
+  <td>
+  </td>
+</tr>
+<tr>
+<td><img src="img/thermonormal.jpg " width="150"></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td><img src="img/thermoleft1.jpg" width="150"> </td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>In a Mammothermogram® each breast is graded individually using the internationally accepted and standardized TH (thermobiological) interpretation protocol. As you can see in the heat bar below, the hotter temperatures are the lighter colors to the right. 
+To see more cases and how it look like, you can check here: <a href="https://thermavue.co.uk/breast-case-studies/">More Cases</a>.<br>
+<img src="img/heat-bar.jpg" width=20%><br> <br>
+</p>
+
+
+
+<h4><mark>Please note: CARE is only 98% accurate. Therefore, there is a 2% chance that our assessment is incorrect. </mark></h4>
+
+<h4>Treatment</h4>
+<p>Because there’s no way of knowing when or if DCIS will become invasive, treatment is usually recommended. It is possible that this may lead to unnecessary or overtreatment for some people. <br><br>
+
+Surgery is nearly always the first treatment for DCIS. This may be breast-conserving surgery or a mastectomy. Your surgeon might recommend that you have a particular surgery or they might give you a choice of operations. <br><br>
+
+If you want to read more about the surgery, here is the complete information about <a href="https://www.cancer.org/cancer/breast-cancer/treatment/surgery-for-breast-cancer/breast-conserving-surgery-lumpectomy.html">breast-conserving surgery</a> and <a href="https://www.cancer.org/cancer/breast-cancer/treatment/surgery-for-breast-cancer/mastectomy.html">mastectomy</a>.
+
+</p>
+
+<h4>Further Support</h4>
+<p>Being told you have DCIS can be a difficult and worrying time. Everyone reacts differently to their diagnosis and have their own way of coping.
+
+Although DCIS is an early form of breast cancer with a very good prognosis, people understandably may feel very anxious and frightened by the diagnosis. People can often struggle to come to terms with being offered treatments such as a mastectomy, at the same time as being told their DCIS may never do them any harm.<br><br>
+
+If you want to talk, don’t be afraid to ask for help if you need it to people around you. You can also call our Helpline on <strong>0808 800 6000.</strong>
+</p><br>
+</div>
+<h3>Additional Info</h3>
+
+ <div class="accordion" id="accordion2">
               <div class="accordion-group">
+                <!--- two -->
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="faq.html#collapseOne">
                     <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How <strong>CARE</strong> analyse my result?
                     </a>
                 </div>
-                <div id="collapseOne" class="accordion-body collapse in">
+                <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
+                    <p>CARE is using a cutting-edge algorithm that is specialised in recognising abnormal breast image based on a thermal scan. CARE's algorithm had went through cycles of process of training and testing using a large amount of thermal scan data. High likelihood assessments are given because there is some similarity between your thermal image and the breast cancer images in CARE’s database. <br><br>
                        
 <button class="btn btn-theme"><i class="fa fa-code"></i> Read more about CARE technicallity</button></p>
                   </div>
@@ -257,8 +332,8 @@ If you want to read more about the surgery, here is the complete information abo
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>The latest research proves that CARE can detect 98% of breast cancer. Therefore, there is a 2% chance that our assessment is incorrect. That means in every 100 assessments, there is 2 assessments that give a wrong result. This accuracy percentage  is obtained from testing and comparison between data.
+</p>
                   </div>
                 </div>
               </div>
@@ -270,8 +345,7 @@ If you want to read more about the surgery, here is the complete information abo
                 </div>
                 <div id="collapseThree" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>CARE's database is a combined database of thermal image records from several big hospitals around the world. Two of the hospitals are Hammersmith Hospital, UK and Ewha Women University Hospital, South Korea.</p>
                   </div>
                 </div>
               </div>
@@ -283,43 +357,27 @@ If you want to read more about the surgery, here is the complete information abo
                 </div>
                 <div id="collapseFour" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>CARE does not use your personal data and not giving away to any third party. CARE is Health Insurance Portability and Accountability Act (HIPAA) compliant and General Data Protection Regulation (GDPR) ready. </p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="faq.html#collapseFive">
-                    <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>WHAT IS CARE CLINICAL CERTIFICATION?
-                    </a>
-                </div>
-                <div id="collapseFive" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
-            <!-- end accordion -->
-</div>
-                    <!-- /row -->
-                  </div>
-                  <!-- /tab-pane -->
-                  <div id="chat" class="tab-pane">
-                    <div class="chat-room mt">
+          </section>
+          <h3>IF YOU HAVE MORE QUESTION</h3>
+          <section>
+              <div class="chat-room mt">
           <aside class="mid-side">
             <div class="chat-room-head">
               <h4>Do you have more question? We will try to answer</h4>
             </div>
             <div class="group-rom">
-              <div class="first-part">Divya Stohess</div>
+              <div class="first-part"><img class="img-circle" src="img/ui-divya.jpg" width="32">Divya Stohess</div>
               <div class="second-part">Previously you said DCIS is not invasive. What does it mean?</div>
               <div class="third-part">12:32</div>
             </div>
             <div class="group-rom last-group">
-              <div class="first-part odd">CARE Agent</div>
+              <div class="first-part odd"><img class="img-circle" src="img/friends/fr-02.jpg" width="32">CARE Agent</div>
               <div class="second-part">Ductal carcinoma in situ (DCIS) is non-invasive breast cancer. Ductal means that the cancer starts inside the milk ducts, carcinoma refers to any cancer that begins in the skin or other tissues (including breast tissue) that cover or line the internal organs, and in situ means "in its original place." DCIS is called "non-invasive" because it hasn’t spread beyond the milk duct into any normal surrounding breast tissue. To read more here: <a href="https://breastcancernow.org/information-support/facing-breast-cancer/diagnosed-breast-cancer/primary-breast-cancer/ductal-carcinoma-in-situ-dcis">cancer.org</a></div>
               <div class="third-part">12:33</div>
             </div>
@@ -336,8 +394,6 @@ If you want to read more about the surgery, here is the complete information abo
           </aside>
           <aside class="right-side">
             <div class="user-head">
-              <a href="#" class="chat-tools btn-theme"><i class="fa fa-cog"></i> </a>
-              <a href="#" class="chat-tools btn-theme03"><i class="fa fa-key"></i> </a>
             </div>
             <div class="invite-row">
               <h4 class="pull-left">Available To Chat</h4>
@@ -358,22 +414,13 @@ If you want to read more about the surgery, here is the complete information abo
             </ul>
           </aside>
         </div>
-                    <!-- /row -->
-                  </div>
-                  <!-- /tab-pane -->
-                </div>
-                <!-- /tab-content -->
-              </div>
-              <!-- /panel-body -->
-            </div>
-            <!-- /col-lg-12 -->
-          </div>
-          <!-- /row -->
-        </div>
+      </section>
+      </div>
         <!-- /container -->
       </section>
       <!-- /wrapper -->
     </section>
+    <!-- /MAIN CONTENT -->
     <!--main content end-->
     <!--footer start-->
     <footer class="site-footer">
@@ -399,30 +446,22 @@ If you want to read more about the surgery, here is the complete information abo
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <!--common script for all pages-->
   <script src="lib/common-scripts.js"></script>
+  
+  
+  <script src="lib/wizard/jquery.steps.min.js"></script>
+  <script src="lib/wizard/bd-wizard.js"></script>
   <!--script for this page-->
   <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
   <script>
-    $('.contact-map').click(function() {
+    $(document).ready(function() {
+    $("input[name$='cars']").click(function() {
+        var test = $(this).val();
+        
 
-      //google map in tab click initialize
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
-        var mapOptions = {
-          zoom: 11,
-          scrollwheel: false,
-          center: myLatlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Dashio Admin Theme!'
-        });
-      }
-      google.maps.event.addDomListener(window, 'click', initialize);
+        $("div.desc").hide();
+        $("#Cars" + test).show();
     });
+});
   </script>
 </body>
 
