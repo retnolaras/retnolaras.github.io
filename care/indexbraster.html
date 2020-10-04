@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>CARE - Breast Cancer Risk Analysis and Early Detection</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="indexbraster.html" class="logo"><b>CARE</b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+        </ul>
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-divya.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Divya Stohess</h5>
+          <li class="mt">
+            <a href="indexbraster.html">
+              <i class="fa fa-book"></i>
+              <span>Profile</span>
+              </a>
+              <a href="uploadimage.html">
+              <i class="fa fa-file"></i>
+              <span>Upload New Image</span>
+              </a>
+              <a href="explanation1.html">
+              <i class="fa fa-medkit"></i>
+              <span>Previous Analysis</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+              <div class="col-md-4 profile-text mt mb centered">
+                <div class="right-divider hidden-sm hidden-xs">
+                  <h3>Divya Stohess</h3>
+                <h5>AGE: 41 years old</h5>
+                  <h5>LOCATION: London</h5>
+                  <h5>CLINIC: Hammersmith Hospital</h5>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 profile-text">
+                <br><br>
+                <h5>CONFIRMED MUTATION: BRCA1/BRCA2</h5>
+                  <h5>DATE OF LAST PERIOD: 12/10/2022</h5>
+                  <h5>DAY OF THE CYCLE: 5</h5>
+                  <h5>SCANNED IMAGES: 3</h5>
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 centered">
+                <div class="profile-pic">
+                  <p><img src="img/ui-divya.jpg" class="img-circle"></p>
+                  <p>
+                    <button class="btn btn-theme">Edit Data</button>
+    
+                  </p>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="border-head">
+              <h2>CHOOSE IMAGE TO ANALYSE</h2>
+            </div>
+            
+          
+          <!-- new section -->
+          <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="custom-box">
+                <div class="servicetitle">
+                  <h5>Scan 1</h5>
+                  <hr>
+                </div>
+                <div class="icn-main-container">
+                  <img class="center" src="img/thermoleft1.jpg" width="200" alt="">
+                  
+                </div>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                -->
+                <ul class="pricing">
+                  <li>Left Breast</li>
+                  <li>Taken: 20/10/2022 18:40</li>
+                </ul>
+               <button class="btn btn-theme" data-toggle="modal" data-target="#myModal1"><i class="fa fa-check"></i> Analyse</button>
+                <!-- Modal -->
+              <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Check Your Data</h4>
+                    </div>
+                    <div class="modal-body">
+                      <img class="center" src="img/thermoleft1.jpg" width="100" alt="">
+                  <p>Left Breast<br>
+                  Taken: 20/10/2022 18:40<br>
+                  CONFIRMED MUTATION: BRCA1/BRCA2<br>
+                  DATE OF LAST PERIOD: 12/10/2022 <br>
+                  DAY OF THE CYCLE: 5<br>
+                  SCANNED IMAGES: 3</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No, I want to edit my data first</button>
+                      <a  href="explanation1.html"><button type="button" class="btn btn-primary">Yes. Analyse Now</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- end custombox -->
+            </div>
+            <!-- end col-4 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="custom-box">
+                <div class="servicetitle">
+                  <h5>Scan 2</h5>
+                  <hr>
+                </div>
+                <div class="icn-main-container">
+                  <img class="center" src="img/thermoright1.jpg" width="200" alt="">
+                  
+                </div>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                -->
+                <ul class="pricing">
+                  <li>Right Breast</li>
+                  <li>Taken: 20/10/2022 18:35</li>
+                </ul>
+                <a  href="explanation2.html"><button class="btn btn-theme"><i class="fa fa-check"></i> Analyse</button></a>
+              </div>
+              <!-- end custombox -->
+            </div>
+            <!-- end col-4 -->
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="custom-box">
+                <div class="servicetitle">
+                  <h5>Scan 3</h5>
+                  <hr>
+                </div>
+                <div class="icn-main-container">
+                  <img class="center" src="img/thermoleft2.jpeg" width="200" alt="">
+                  
+                </div>
+                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                -->
+                <ul class="pricing">
+                  <li>Left Breast</li>
+                  <li>Taken: 18/10/2022 18:30</li>
+                </ul>
+             
+                <button class="btn btn-theme" data-toggle="modal" data-target="#myModal2"><i class="fa fa-check"></i> Analyse</button>
+                <!-- Modal -->
+              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Check Your Data</h4>
+                    </div>
+                    <div class="modal-body">
+                      <img class="center" src="img/thermoleft2.jpeg" width="100" alt="">
+                  <p>Left Breast<br>
+                  Taken: 18/10/2022 18:30<br>
+                  CONFIRMED MUTATION: BRCA1/BRCA2<br>
+                  DATE OF LAST PERIOD: 12/10/2022 <br>
+                  DAY OF THE CYCLE: 5<br>
+                  SCANNED IMAGES: 3</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No, I want to edit my data first</button>
+                      <a  href="explanation3.html"><button type="button" class="btn btn-primary">Yes. Analyse Now</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+              <!-- end custombox -->
+            </div>
+            <!-- end col-4 -->
+            
+          </div>
+          <!--  /col-lg-12 -->
+        </div>
+          <!-- new section -->
+        </div>
+        <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>CARE</strong>. All Rights Reserved.  
+        Recommended by: <img class="" src="img/nhs.png" width="50" alt=""></p> 
+        <div class="credits">
+         
+        </div>
+        <a href="profile.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+  <script>
+    $('.contact-map').click(function() {
+
+      //google map in tab click initialize
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+        var mapOptions = {
+          zoom: 11,
+          scrollwheel: false,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Dashio Admin Theme!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'click', initialize);
+    });
+  </script>
+</body>
+
+</html>
